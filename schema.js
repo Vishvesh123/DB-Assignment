@@ -1,4 +1,18 @@
+const express = require("express");
 const mongoose = require('mongoose');
+
+const app = express();
+app.use(express.json());
+mongoose.connect(
+  "mongodb://localhost:27017/magesDB",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
+
+
+
 const Schema = mongoose.Schema;
 
 const productCategorySchema = new Schema({
