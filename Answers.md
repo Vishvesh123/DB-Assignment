@@ -2,7 +2,8 @@ Answer No-1.  The relationship between the "Product" and "Product_Category" enti
 Each product is associated with a specific category by matching its category_id with the corresponding id in the “Product_Category” entity.
 In other words, the “Product” entity references the “Product_Category” entity to determine which category a product belongs to.
 
-Answer No-2.  Implement validation logic in your application code.
+Answer No-2.  To ensure that each product in the “Product” table has a valid category assigned to it,  
+Implement validation logic in application code.
 Before inserting or updating a product, verify that the provided category_id corresponds to an existing category.
-If not, handle the situation programmatically.
+If not,  prompt the user to select a valid category. 
 
